@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/icons/spider.svg</file>
+        <file>resources/icons/pause.svg</file>
+        <file>resources/icons/previous.svg</file>
+        <file>resources/icons/play.svg</file>
+        <file>resources/icons/exit.svg</file>
+        <file>resources/icons/github.svg</file>
+        <file>resources/icons/clear.svg</file>
+        <file>resources/icons/next.svg</file>
+        <file>resources/icons/about.svg</file>
+        <file>resources/icons/done.svg</file>
+        <file>resources/icons/reset.svg</file>
+        <file>resources/icons/leader.png</file>
+        <file>resources/icons/qt.png</file>
+        <file>resources/icons/user.jpg</file>
+        <file>resources/themes/light.qss</file>
+        <file>resources/themes/gray.qss</file>
+        <file>resources/themes/black.qss</file>
+        <file>resources/icons/question.svg</file>
+        <file>resources/user_agents.ini</file>
+        <file>resources/icons/tips.svg</file>
+        <file>resources/icons/answer.svg</file>
+    </qresource>
+</RCC>

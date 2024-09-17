@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>898</width>
+    <height>661</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="layouGWidget">
+    <property name="leftMargin">
+     <number>1</number>
+    </property>
+    <property name="topMargin">
+     <number>1</number>
+    </property>
+    <property name="rightMargin">
+     <number>1</number>
+    </property>
+    <property name="bottomMargin">
+     <number>1</number>
+    </property>
+    <property name="spacing">
+     <number>1</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="pageSpider">
+       <layout class="QGridLayout" name="layoutGSpider">
+        <property name="leftMargin">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>1</number>
+        </property>
+        <property name="rightMargin">
+         <number>1</number>
+        </property>
+        <property name="bottomMargin">
+         <number>1</number>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="2">
+           <widget class="QLCDNumber" name="spiderLcdNumber">
+            <property name="styleSheet">
+             <string notr="true">background:green</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="5">
+           <widget class="QPushButton" name="spiderButtonStop">
+            <property name="text">
+             <string>Stop</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QComboBox" name="spiderComboPlatform"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="spiderLabelPlatform">
+            <property name="text">
+             <string>Platform</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="spiderButtonStart">
+            <property name="text">
+             <string>Start</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QPushButton" name="spiderButtonStartAll">
+            <property name="text">
+             <string>Start all</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="6">
+           <spacer name="spiderSpacerH">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="0" column="0" colspan="7">
+           <widget class="QTableView" name="spiderTableView"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageQ">
+       <layout class="QGridLayout" name="layoutGQ">
+        <property name="leftMargin">
+         <number>1</number>
+        </property>
+        <property name="topMargin">
+         <number>1</number>
+        </property>
+        <property name="rightMargin">
+         <number>1</number>
+        </property>
+        <property name="bottomMargin">
+         <number>1</number>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QLabel" name="QLabelQuestion">
+          <property name="text">
+           <string>Question</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" rowspan="10">
+         <widget class="QFrame" name="frameProperty">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="layoutGFrame">
+           <property name="leftMargin">
+            <number>1</number>
+           </property>
+           <property name="topMargin">
+            <number>1</number>
+           </property>
+           <property name="rightMargin">
+            <number>1</number>
+           </property>
+           <property name="bottomMargin">
+            <number>1</number>
+           </property>
+           <property name="spacing">
+            <number>1</number>
+           </property>
+           <item row="5" column="0" colspan="2">
+            <widget class="QLabel" name="QLabelPassed">
+             <property name="text">
+              <string>Passed</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QComboBox" name="QCBPlatform"/>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QLabel" name="QLabelPlatform">
+             <property name="text">
+              <string>Platform</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QLabel" name="QLabelLevel">
+             <property name="text">
+              <string>Level</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QComboBox" name="QCBLevel"/>
+           </item>
+           <item row="7" column="0" colspan="2">
+            <widget class="QLabel" name="QLabelRate">
+             <property name="text">
+              <string>Rate</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="2">
+            <widget class="QLabel" name="QLabelSubmit">
+             <property name="text">
+              <string>Submit</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="2">
+            <widget class="QLabel" name="QLabelName">
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QLabel" name="QLabelId">
+             <property name="text">
+              <string>Id</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0" colspan="2">
+            <widget class="QLabel" name="QLabelCata">
+             <property name="text">
+              <string>Cata</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QCheckBox" name="QCheckPlatform">
+             <property name="text">
+              <string>Locked</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QCheckBox" name="QCheckLevel">
+             <property name="text">
+              <string>Locked</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2" colspan="2">
+            <widget class="QLineEdit" name="QLineSubmit">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2" rowspan="2" colspan="2">
+            <widget class="QLineEdit" name="QLinePassed">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2" colspan="2">
+            <widget class="QLineEdit" name="QLineRate">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="2" colspan="2">
+            <widget class="QPlainTextEdit" name="QPlainTextCata"/>
+           </item>
+           <item row="1" column="2" colspan="2">
+            <widget class="QLineEdit" name="QLineName">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2" colspan="2">
+            <widget class="QLineEdit" name="QLineId"/>
+           </item>
+           <item row="10" column="2" colspan="2">
+            <widget class="QPlainTextEdit" name="QTextTip"/>
+           </item>
+           <item row="12" column="2" colspan="2">
+            <widget class="QPlainTextEdit" name="QTextAnswer"/>
+           </item>
+           <item row="9" column="0" rowspan="2" colspan="2">
+            <widget class="QLabel" name="QLabelTip">
+             <property name="text">
+              <string>Tip</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0" rowspan="2" colspan="2">
+            <widget class="QLabel" name="QLabelAnswer">
+             <property name="text">
+              <string>Answer</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1" rowspan="9">
+         <widget class="QTextEdit" name="QTextQuestion"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>898</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionReset"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionStart_End"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrevious"/>
+    <addaction name="actionNext"/>
+    <addaction name="actionClear"/>
+    <addaction name="separator"/>
+    <addaction name="actionDone"/>
+    <addaction name="separator"/>
+    <addaction name="actionTip"/>
+    <addaction name="actionAnswer"/>
+   </widget>
+   <widget class="QMenu" name="menu_View">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="actionSpider"/>
+    <addaction name="actionQuestion"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionQt"/>
+    <addaction name="actionGithub"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_View"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionReset"/>
+   <addaction name="separator"/>
+   <addaction name="actionStart_End"/>
+   <addaction name="actionPrevious"/>
+   <addaction name="actionNext"/>
+   <addaction name="actionClear"/>
+   <addaction name="actionDone"/>
+   <addaction name="actionTip"/>
+   <addaction name="actionAnswer"/>
+   <addaction name="separator"/>
+   <addaction name="actionExit"/>
+   <addaction name="separator"/>
+   <addaction name="actionAbout"/>
+   <addaction name="actionQt"/>
+   <addaction name="actionGithub"/>
+  </widget>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/reset.svg</normaloff>:/resources/icons/reset.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/exit.svg</normaloff>:/resources/icons/exit.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionStart_End">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/play.svg</normaloff>:/resources/icons/play.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Start/End</string>
+   </property>
+  </action>
+  <action name="actionPrevious">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/previous.svg</normaloff>:/resources/icons/previous.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Previous</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/next.svg</normaloff>:/resources/icons/next.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/clear.svg</normaloff>:/resources/icons/clear.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="actionDone">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/done.svg</normaloff>:/resources/icons/done.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Done</string>
+   </property>
+  </action>
+  <action name="actionSpider">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/spider.svg</normaloff>:/resources/icons/spider.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Spider</string>
+   </property>
+  </action>
+  <action name="actionQuestion">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/question.svg</normaloff>:/resources/icons/question.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Question</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/about.svg</normaloff>:/resources/icons/about.svg</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionQt">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/qt.png</normaloff>:/resources/icons/qt.png</iconset>
+   </property>
+   <property name="text">
+    <string>Qt</string>
+   </property>
+  </action>
+  <action name="actionGithub">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/github.svg</normaloff>:/resources/icons/github.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Github</string>
+   </property>
+  </action>
+  <action name="actionTip">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/tips.svg</normaloff>:/resources/icons/tips.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Tip</string>
+   </property>
+  </action>
+  <action name="actionAnswer">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/resources/icons/answer.svg</normaloff>:/resources/icons/answer.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Answer</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
